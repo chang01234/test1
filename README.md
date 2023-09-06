@@ -20,3 +20,8 @@ git push
 git add b，然后执行git commit -m "update b submodule"提交更改。
 最后，执行git push将更改推送到远程仓库，即可完成同步更新b子模块。
 请注意，在执行上述步骤之前，确保在a项目中使用的是b子模块的最新稳定版本。否则可能会引起版本冲突或其他问题。
+
+1、回滚本地提交的记录
+git reset --hard 目标commit的hash值
+2、强制提交到远端服务器
+git push origin HEAD --force
