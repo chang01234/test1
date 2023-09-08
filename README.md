@@ -33,4 +33,6 @@ git branch               ：查看本地分支
 
 git checkout 分支名称     ：转换到分支目录
 
+git submodule update --force --init --recursive   ：更新子模块数据，@文件名-调用分支中的子模块
+
 
