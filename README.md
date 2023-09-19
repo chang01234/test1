@@ -25,3 +25,14 @@ git add b，然后执行git commit -m "update b submodule"提交更改。
 git reset --hard 目标commit的hash值
 2、强制提交到远端服务器
 git push origin HEAD --force
+
+git bash 命令笔记
+git branch -a            ：查看所有分支，包括远程和本地
+git branch -r            ：查看远程分支
+git branch               ：查看本地分支
+
+git checkout 分支名称     ：转换到分支目录
+
+git submodule update --force --init --recursive   ：更新子模块数据，@文件名-调用分支中的子模块
+
+
