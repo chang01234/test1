@@ -1,7 +1,0 @@
-# Add 'enhancement' label to any PR where the head branch name starts with `feature`
-enhancement:
- - head-branch: ['^feature']
-
-# Add 'bug' label to any PR where the head branch name starts with `bugfix`
-bug:
- - head-branch: ['^bugfix']

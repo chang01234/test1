@@ -1,3 +1,0 @@
-#include "iGeneralDefinitions.h"
-const __attribute__((section(".rodata_custom_desc"))) char GIT_DICM_VERSION[] = "${GIT_DICM_REPO_VERSION}";
-COMPILE_TIME_ASSERT(sizeof(GIT_DICM_VERSION) <= 0x30);   // size left for user data after appdesc

@@ -1,1 +1,0 @@
-const char GIT_VERSION[] = "${GIT_REPO_VERSION}";

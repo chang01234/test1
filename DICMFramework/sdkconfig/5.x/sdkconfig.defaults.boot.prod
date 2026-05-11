@@ -1,6 +1,0 @@
-# Secure Boot Signing Key for Production build
-
-#
-# Security features
-#
-CONFIG_SECURE_BOOT_SIGNING_KEY="secure_boot_signing_key.pem"
