@@ -1,0 +1,6 @@
+[submodule "source/eds"]
+	path = source/eds
+	url = https://github.com/nradulovic/nk-event-driven-system.git
+[submodule "ddm2"]
+	path = ddm2
+	url = https://github.com/onedometic/dicm-ddm2-param.git

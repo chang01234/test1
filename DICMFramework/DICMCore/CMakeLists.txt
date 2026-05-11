@@ -1,0 +1,2 @@
+add_subdirectory(DICMBroker)
+add_subdirectory(DICMConnectors)

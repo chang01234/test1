@@ -1,0 +1,719 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>110</x>
+      <y>70</y>
+      <w>990</w>
+      <h>780</h>
+    </coordinates>
+    <panel_attributes>symbol=component
+*&lt;&lt;Network&gt;&gt;*
+Event Processing Network
+bg=white
+layer=-1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>430</x>
+      <y>170</y>
+      <w>90</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Event</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>200</x>
+      <y>170</y>
+      <w>180</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>symbol=component
+*&lt;&lt;Agent&gt;&gt;*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>220</x>
+      <y>220</y>
+      <w>140</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>State machine with
+states
+symbol=substate</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>760</x>
+      <y>170</y>
+      <w>180</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>symbol=component
+*&lt;&lt;Agent&gt;&gt;*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>780</x>
+      <y>220</y>
+      <w>140</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>State machine with
+states
+symbol=substate</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>370</x>
+      <y>220</y>
+      <w>410</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+Send()</panel_attributes>
+    <additional_attributes>390.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>280</x>
+      <y>430</y>
+      <w>180</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>symbol=component
+*&lt;&lt;Agent&gt;&gt;*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>300</x>
+      <y>480</y>
+      <w>140</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>State machine with
+states
+symbol=substate</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>690</x>
+      <y>370</y>
+      <w>180</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>symbol=component
+*&lt;&lt;Agent&gt;&gt;*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>710</x>
+      <y>420</y>
+      <w>140</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>State machine with
+states
+symbol=substate</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>830</x>
+      <y>560</y>
+      <w>180</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>symbol=component
+*&lt;&lt;Agent&gt;&gt;*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>850</x>
+      <y>610</y>
+      <w>140</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>State machine with
+states
+symbol=substate</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>140</x>
+      <y>700</y>
+      <w>220</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>symbol=component
+Scheduler
+--
+- Internal component of Network
+- Unlimited number of Agents
+- 32 priority levels
+- Can run multiple Agents on 
+  same priority level</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>450</x>
+      <y>510</y>
+      <w>400</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+Send()</panel_attributes>
+    <additional_attributes>380.0;140.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>490</x>
+      <y>460</y>
+      <w>90</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Event</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>360</x>
+      <y>340</y>
+      <w>90</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Event</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>290</x>
+      <y>290</y>
+      <w>110</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+Send()</panel_attributes>
+    <additional_attributes>10.0;10.0;80.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>470</x>
+      <y>370</y>
+      <w>90</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Event</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>450</x>
+      <y>420</y>
+      <w>260</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+Send()</panel_attributes>
+    <additional_attributes>240.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>390</x>
+      <y>700</y>
+      <w>220</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>symbol=component
+Sleep
+--
+- Internal component of Network
+- Sleep when no event is available</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1230</x>
+      <y>70</y>
+      <w>990</w>
+      <h>780</h>
+    </coordinates>
+    <panel_attributes>symbol=component
+*&lt;&lt;Network&gt;&gt;*
+Event Processing Network
+bg=white
+layer=-1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>1550</x>
+      <y>170</y>
+      <w>90</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Event</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1320</x>
+      <y>170</y>
+      <w>180</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>symbol=component
+*&lt;&lt;Agent&gt;&gt;*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>1340</x>
+      <y>220</y>
+      <w>140</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>State machine with
+states
+symbol=substate</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1880</x>
+      <y>170</y>
+      <w>180</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>symbol=component
+*&lt;&lt;Agent&gt;&gt;*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>1900</x>
+      <y>220</y>
+      <w>140</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>State machine with
+states
+symbol=substate</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1490</x>
+      <y>220</y>
+      <w>410</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+Send()</panel_attributes>
+    <additional_attributes>390.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1400</x>
+      <y>430</y>
+      <w>180</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>symbol=component
+*&lt;&lt;Agent&gt;&gt;*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>1420</x>
+      <y>480</y>
+      <w>140</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>State machine with
+states
+symbol=substate</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1810</x>
+      <y>370</y>
+      <w>180</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>symbol=component
+*&lt;&lt;Agent&gt;&gt;*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>1830</x>
+      <y>420</y>
+      <w>140</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>State machine with
+states
+symbol=substate</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1910</x>
+      <y>620</y>
+      <w>180</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>symbol=component
+*&lt;&lt;Agent&gt;&gt;*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>1930</x>
+      <y>670</y>
+      <w>140</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>State machine with
+states
+symbol=substate</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1260</x>
+      <y>730</y>
+      <w>140</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>symbol=component
+Scheduler</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1570</x>
+      <y>510</y>
+      <w>360</w>
+      <h>220</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+Send()</panel_attributes>
+    <additional_attributes>340.0;200.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>1610</x>
+      <y>470</y>
+      <w>90</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Event</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>1480</x>
+      <y>340</y>
+      <w>90</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Event</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1410</x>
+      <y>290</y>
+      <w>110</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+Send()</panel_attributes>
+    <additional_attributes>10.0;10.0;80.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>1590</x>
+      <y>370</y>
+      <w>90</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Event</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1570</x>
+      <y>420</y>
+      <w>260</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+Send()</panel_attributes>
+    <additional_attributes>240.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1430</x>
+      <y>730</y>
+      <w>140</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>symbol=component
+Sleep</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>930</x>
+      <y>230</y>
+      <w>490</w>
+      <h>310</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+Send()</panel_attributes>
+    <additional_attributes>10.0;10.0;470.0;290.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>1270</x>
+      <y>370</y>
+      <w>90</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Event</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>860</x>
+      <y>430</y>
+      <w>560</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+Send()</panel_attributes>
+    <additional_attributes>10.0;10.0;540.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>1260</x>
+      <y>530</y>
+      <w>90</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Event</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>930</x>
+      <y>200</y>
+      <w>410</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+Send()</panel_attributes>
+    <additional_attributes>390.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>990</x>
+      <y>150</y>
+      <w>90</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Event</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1060</x>
+      <y>880</y>
+      <w>210</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>symbol=component
+Allocator
+--
+- Internal component of EDS
+- Allows for up to 16
+  different allocators
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>110</x>
+      <y>880</y>
+      <w>180</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>In FreeRTOS port:
+- Uses a single thread
+- Uses a single semaphore
+- Runs in a thread
+bg=orange</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1060</x>
+      <y>1030</y>
+      <w>210</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>symbol=component
+Timer
+--
+- Internal component of EDS
+- In FreeRTOS uses a single
+  timer</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>650</x>
+      <y>700</y>
+      <w>220</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>symbol=component
+Event Timer
+--
+- Public component of Network
+- Manages timers and event
+  delivery</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1600</x>
+      <y>730</y>
+      <w>140</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>symbol=component
+Event Timer</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>60</x>
+      <y>0</y>
+      <w>2370</w>
+      <h>1180</h>
+    </coordinates>
+    <panel_attributes>template= Event Driven System
+
+fontsize=32
+layer=-1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>110</x>
+      <y>1210</y>
+      <w>410</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>Pros of state machines
+- No separate stacks (runs in a single thread)
+- Do not consume a lot of resources (RAM)
+  compared to FreeRTOS tasks
+- Best fit for implementing a control logic algorithms
+- Efficient processing of events
+- State machines tend to decouple the problem domains
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>550</x>
+      <y>1210</y>
+      <w>410</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>Cons of state machines
+- No blocking calls in state machines
+  since it will block all state machines in
+  a network
+- Not best fit for data processing algorithms 
+  which consume a lot of CPU time
+bg=red</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

@@ -1,0 +1,16 @@
+name: Validation Policies for a DICM Application
+
+on:
+  pull_request:
+    branches:
+      - develop
+
+jobs:
+  check_clang_format:
+    name: Clang Format Checker
+    uses: onedometic/dicm-actions/.github/workflows/clang_format_check.yml@develop
+    with:
+      filter: true
+      filterset: '^"components"'
+    secrets:
+      token: ${{ secrets.ACTIONS }}

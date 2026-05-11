@@ -1,0 +1,30 @@
+name: Branch Naming Policy Action
+
+on:
+  create:
+  delete:
+  pull_request:
+    branches:
+      - develop
+
+jobs:
+  branch-naming-policy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.ACTIONS }}
+          submodules: recursive
+
+      - name: Run Branch Naming Policy Action
+        uses: nicklegan/github-repo-branch-naming-policy-action@v1.1.1
+        if: github.ref_type == 'branch' || github.ref_type == 'pull_request'
+        with:
+          token: ${{ secrets.ACTIONS }}
+          # Matches 'feature/ISE-1234-xxxxx' or 'feature/ISE-1234-xxxxx' or 'release/2.3.x' 
+          regex: '^((feature|bugfix)([\/]ISE-[0-9]+.*)|release[\/][0-9]+[.][0-9]+[.]x)$'
+          flags: 
+          # token: ${{ secrets.REPO_TOKEN }}
+          # delete: true

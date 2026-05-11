@@ -1,0 +1,39 @@
+{
+  "configs" : [
+    {
+      "name": "CFX2_DOOR_OPEN_EVENTS",
+      "comment": "The name is the contract for this feature between app and firmware - Create a log event every for every door open event",
+      "config": "mccc0cdoor -cmccc0cdoor==1"
+    },
+    {
+      "name": "CFX2_HIST_TEMP",
+      "comment": "Test config",
+      "config": "mccc0ctemp -dr -i1m -s5s -cgw0rcnt:0>gw0ocnt:0 -h 500:500",
+      "readconfigs": [
+        {
+          "name": "10MIN_0",
+          "comment": "Produces aggregated data (last hour) in steps of 10m, same as logconfig",
+          "config": "mccc0ctemp -f 1m -t :10m"
+        },
+        {
+          "name": "HOUR_0",
+          "config": "mccc0ctemp -f 10m -t :1h"
+        }
+      ]
+    },
+    {
+      "name": "CFX2_HIST_TEMP_2",
+      "config": "mccc0ctemp:4 -dr -i10s -s5s -cmccc0nocpt>1 -h 500:500",
+      "readconfigs": [
+        {
+          "name": "10MIN_0",
+          "config": "mccc0ctemp:4 -f 1m -t :10m"
+        },
+        {
+          "name": "HOUR_0",
+          "config": "mccc0ctemp:4 -f 10m -t :1h"
+        }
+      ]
+    }
+  ]
+}

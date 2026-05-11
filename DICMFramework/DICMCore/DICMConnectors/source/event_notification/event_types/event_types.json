@@ -1,0 +1,61 @@
+[
+    {
+        "type": 1234,
+        "config": 3,
+        "ddm": [
+            {"name": "AC0MDL"},
+            {"name": "HTR0ACWTRHST"}
+        ]
+    },
+    {
+        "type": 4444,
+        "config": 3,
+        "ddm": [
+            {"name": "AC0ITEMP"},
+            {"name": "AC0ETEMP"}
+        ]
+    },
+    {
+        "type": 5555,
+        "config": 3,
+        "ddm": [
+            {"name": "AC0ITEMP"},
+            {"name": "AC0ETEMP"},
+            {"name": "AC0FS"}
+        ]
+    },
+    {
+        "type": 1111,
+        "config": 3,
+        "ddm": [
+            {"name": "WIFI0STS"},
+            {"name": "WIFI0CNW"},
+            {"name": "WIFI0ON"},
+            {"name": "WIFI0EV"}
+        ]
+    },
+    {
+        "type": 2222,
+        "config": 3,
+        "ddm": [
+            {
+                "name": "RVCMGNT0RAWRX",
+                "field_size": 32
+            },
+            {
+                "name": "RVCPROP0DATA",
+                "field_size": 32
+            }
+        ]
+    },
+    {
+        "type": 3333,
+        "config": 3,
+        "ddm": [
+            {
+                "name": "RVCMGNT0RAWRX",
+                "field_offset": 32
+            }
+        ]
+    }
+]

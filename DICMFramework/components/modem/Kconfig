@@ -1,0 +1,45 @@
+menu "IOT Modem"
+
+config MODEM_APN
+    string "Modem APN"
+    default "dometic.cxn"
+    help
+        Default endpoint host name to connect to
+
+config MODEM_UART_TX_PIN
+    int "Modem UART TX Pin"
+    default 25
+    help
+        UART TX pin number 
+
+config MODEM_UART_RX_PIN
+    int "Modem UART RX Pin"
+    default 39
+    help
+        UART RX pin number 
+
+config MODEM_UART_RTS_PIN
+    int "Modem UART RTS Pin"
+    default -1
+    help
+        UART RTS pin number (-1 = not used)
+
+config MODEM_UART_CTS_PIN
+    int "Modem UART CTS Pin"
+    default -1
+    help
+        UART CTS pin number (-1 = not used)
+
+config MODEM_PPP_AUTH_USERNAME
+    string "Modem PPP Auth Username"
+    default ""
+    help
+        PPP Username to use when authorizing connection
+
+config MODEM_PPP_AUTH_PASSWORD
+    string "Modem PPP Auth Password"
+    default ""
+    help
+        PPP Password to use when authorizing connection
+
+endmenu  # IOT Modem

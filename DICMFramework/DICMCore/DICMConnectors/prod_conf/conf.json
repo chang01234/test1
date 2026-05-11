@@ -1,0 +1,102 @@
+[
+    {
+        "manuf": [
+            "GOPOWER",
+            "Go Power!"
+        ],
+        "model": [
+            {
+                "GP-DISPLAY" : {
+                    "fwid": [ "MP1" ],
+                    "version_patterns": {
+                         "fwver_regex": "^[^-]*-[^-]*-(.*)$"
+                    }
+                }
+            },
+            {
+                "GP-Shunt" : {
+                    "type": 1,
+                    "fwid": [ "MH1" ],
+                    "version_patterns": {
+                         "fwver_regex": "^[^-]*-[^-]*-(.*)$"
+                    }
+                }
+            },
+            {
+                "GP-LFP-100" : {
+                    "fwid": [ "MB1" ]
+                }
+            },
+            {
+                "GP-LFP-300" : {
+                    "fwid": [ "MB2" ]
+                }
+            },
+            {
+                "SC-DB-MPPT-30" : {
+                    "fwid": [ "MS1", "MS1-MC1" ],
+                    "version_patterns": {
+                        "fwver_regex": "^[^-]*-[^-]*-[^-]*-[^-]*-(.*)$"
+                    }
+                }
+            },
+            {
+                "SC-DB-MPPT-40" : {
+                    "fwid": [ "MS2", "MS2-MC1" ],
+                    "version_patterns": {
+                        "fwver_regex": "^[^-]*-[^-]*-[^-]*-[^-]*-(.*)$"
+                    }
+                }
+            },
+            {
+                "GP-AIC" : {
+                    "type": 32,
+                    "fwid": [ "MI1", "MI1-MC1" ],
+                    "version_patterns": {
+                        "fwver_regex": "^[^-]*-[^-]*-[^-]*-[^-]*-[^-]*-([^_]*)",
+                        "hwver_regex": "^[^_]*_(.*)$"
+                    }
+                }
+            },
+            {
+                "GP-RVC-SSW" : {
+                    "fwid": [ "MI2" ],
+                    "version_patterns": {
+                        "fwver_regex": "^[^-]*-[^-]*-[^-]*-[^-]*-(.*)$"
+                    }
+                }
+            }
+        ],
+        "sn": []
+    },
+    {
+        "manuf": [
+            "Dometic NDS"
+        ],
+        "model": [],
+        "sn": []
+    },
+    {
+        "manuf": [
+            "Dometic"
+        ],
+        "model": [],
+        "sn": []
+    },
+    {
+        "manuf": [
+            "SILVERLEAF"
+        ],
+        "model": [
+            {
+                "TM505" : {
+                    "type": 32,
+                    "version_patterns": {
+                         "fwver_regex": "^[^-]*-([^()]*)\\("
+                    }
+                }
+            }
+        ],
+        "sn": []
+    }
+]

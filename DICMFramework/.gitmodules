@@ -1,0 +1,9 @@
+[submodule "DICMHal"]
+	path = DICMHal
+	url = https://github.com/0leo1233/mc5_dicm_hal.git
+[submodule "DICMCommonLibs"]
+	path = DICMCommonLibs
+	url = https://github.com/onedometic/dicm-common-libs.git
+[submodule "components/aws_iot"]
+	path = components/aws_iot
+	url = https://github.com/espressif/esp-aws-iot

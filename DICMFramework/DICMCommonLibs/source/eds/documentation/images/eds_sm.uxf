@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>9</zoom_level>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>216</x>
+      <y>72</y>
+      <w>162</w>
+      <h>117</h>
+    </coordinates>
+    <panel_attributes>state_name
+--
+EVENT_A:
+   action1()
+
+EVENT_B:
+   action2()
+
+
+valign=top
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>216</x>
+      <y>288</y>
+      <w>162</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>state_a
+--
+
+
+valign=top
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>558</x>
+      <y>288</y>
+      <w>162</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>state_b
+--
+
+
+valign=top
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>216</x>
+      <y>0</y>
+      <w>126</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>Overview of state
+bg=orange</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>216</x>
+      <y>216</y>
+      <w>126</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>Event Transition
+bg=orange</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>369</x>
+      <y>324</y>
+      <w>207</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+EVENT_A</panel_attributes>
+    <additional_attributes>210.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>216</x>
+      <y>486</y>
+      <w>162</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>state_a
+--
+ENTRY:
+   action_a_entry()
+   
+EXIT:
+   action_a_exit()
+
+valign=top
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>216</x>
+      <y>414</y>
+      <w>180</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>Event Transition with 
+entry/exit
+bg=orange</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>369</x>
+      <y>522</y>
+      <w>207</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+EVENT_A</panel_attributes>
+    <additional_attributes>210.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>558</x>
+      <y>486</y>
+      <w>162</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>state_b
+--
+ENTRY:
+   action_b_entry()
+   
+EXIT:
+   action_b_exit()
+
+valign=top
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>765</x>
+      <y>486</y>
+      <w>243</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>Executed actions:
+1. action_a_exit()
+2. action_b_entry()
+bg=orange</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>216</x>
+      <y>972</y>
+      <w>180</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>Blinky example
+bg=orange</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates>
+      <x>72</x>
+      <y>1089</y>
+      <w>18</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>type=initial</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>81</x>
+      <y>1080</y>
+      <w>153</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+</panel_attributes>
+    <additional_attributes>150.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>657</x>
+      <y>1044</y>
+      <w>162</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>state_on
+--
+ENTRY:
+   led_on()
+
+valign=top
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>810</x>
+      <y>1062</y>
+      <w>207</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+EVENT_TIMEOUT</panel_attributes>
+    <additional_attributes>210.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>999</x>
+      <y>1044</y>
+      <w>162</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>state_off
+--
+ENTRY:
+   led_off()
+   
+
+valign=top
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>810</x>
+      <y>1098</y>
+      <w>207</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+EVENT_TIMEOUT</panel_attributes>
+    <additional_attributes>210.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>216</x>
+      <y>1044</y>
+      <w>261</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>setup_timer
+--
+ENTRY:
+   event = event_create(EVENT_TIMEOUT)
+   timer = timer_create()
+   timer_after(timer, 1s)
+
+valign=top
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>468</x>
+      <y>1062</y>
+      <w>207</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+&lt;&lt;event-less transition&gt;&gt;</panel_attributes>
+    <additional_attributes>210.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>216</x>
+      <y>1251</y>
+      <w>162</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>state_a
+--
+ENTRY:
+   action_a_entry()
+   
+EXIT:
+   action_a_exit()
+
+valign=top
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>216</x>
+      <y>1179</y>
+      <w>180</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>Conditional Transition 1
+
+bg=orange</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>369</x>
+      <y>1287</y>
+      <w>306</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+EVENT_A[is_flag_set()]</panel_attributes>
+    <additional_attributes>320.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>657</x>
+      <y>1251</y>
+      <w>162</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>state_b
+--
+ENTRY:
+   action_b_entry()
+   
+EXIT:
+   action_b_exit()
+
+valign=top
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>216</x>
+      <y>1458</y>
+      <w>162</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>state_a
+--
+ENTRY:
+   action_a_entry()
+   
+EXIT:
+   action_a_exit()
+
+valign=top
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>216</x>
+      <y>1386</y>
+      <w>180</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>Conditional Transition 2
+
+bg=orange</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>369</x>
+      <y>1494</y>
+      <w>126</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+EVENT</panel_attributes>
+    <additional_attributes>120.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>657</x>
+      <y>1458</y>
+      <w>162</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>state_b
+--
+ENTRY:
+   action_b_entry()
+   
+EXIT:
+   action_b_exit()
+
+valign=top
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>657</x>
+      <y>1593</y>
+      <w>162</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>state_c
+--
+ENTRY:
+   action_c_entry()
+   
+EXIT:
+   action_c_exit()
+
+valign=top
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates>
+      <x>477</x>
+      <y>1494</y>
+      <w>36</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>type=decision</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>504</x>
+      <y>1494</y>
+      <w>171</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+[is_flag_b_set()]</panel_attributes>
+    <additional_attributes>170.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>486</x>
+      <y>1521</y>
+      <w>189</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+[is_flag_c_set()]</panel_attributes>
+    <additional_attributes>190.0;140.0;10.0;140.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>216</x>
+      <y>612</y>
+      <w>162</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>state_a
+--
+ENTRY:
+   action_a_entry()
+   
+EXIT:
+   action_a_exit()
+
+valign=top
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>369</x>
+      <y>630</y>
+      <w>135</w>
+      <h>81</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+EVENT_A</panel_attributes>
+    <additional_attributes>10.0;70.0;70.0;70.0;70.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>558</x>
+      <y>612</y>
+      <w>162</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>state_b
+--
+ENTRY:
+   action_b_entry()
+   
+EXIT:
+   action_b_exit()
+
+valign=top
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>765</x>
+      <y>612</y>
+      <w>243</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>Executed actions:
+1. action_a_exit()
+2. action_a_entry()
+bg=orange</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates>
+      <x>216</x>
+      <y>873</y>
+      <w>18</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>type=initial</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>225</x>
+      <y>864</y>
+      <w>171</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+</panel_attributes>
+    <additional_attributes>170.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>216</x>
+      <y>747</y>
+      <w>126</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>Initial transition and
+initial state with
+action
+bg=orange</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>378</x>
+      <y>828</y>
+      <w>162</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>state_a
+--
+ENTRY:
+   state_a_entry()
+
+valign=top
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>765</x>
+      <y>819</y>
+      <w>243</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>Executed actions:
+1. action_a_entry()
+
+bg=orange</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

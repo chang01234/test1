@@ -1,0 +1,16 @@
+name: Pull Request Auto Assign Action
+
+on:
+  pull_request:
+    branches:
+      - develop
+
+jobs:
+  pr-auto-assign-author:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Enforce Pull Request Auto Assign Policy
+        uses: toshimaru/auto-author-assign@v2.1.1
+        with:
+          repo-token: ${{ secrets.ACTIONS }}

@@ -1,0 +1,6 @@
+# Secure Boot Signing Key for Development build
+
+#
+# Security features
+#
+CONFIG_SECURE_BOOT_SIGNING_KEY="DICMFramework/secure_boot_signing_key_dev.pem"

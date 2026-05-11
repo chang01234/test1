@@ -1,0 +1,109 @@
+/*
+ * payloads.h
+ *
+ *  Created on: 18 Jun 2019
+ *      Author: Stefan.Henningsohn
+ */
+
+#ifndef MAIN_PAYLOADS_H_
+#define MAIN_PAYLOADS_H_
+
+#define PAYLOAD_NBR_START (0xFF000000)
+
+#define PAYLOAD_TOPTRON_START          PAYLOAD_NBR_START
+#define PAYLOAD_TOPTRON_END            PAYLOAD_NBR_START + (0x10)
+#define PAYLOAD_HELLA_START            PAYLOAD_TOPTRON_END
+#define PAYLOAD_HELLA_END              PAYLOAD_HELLA_START + (0x10)
+#define PAYLOAD_TRUMA_START				PAYLOAD_HELLA_END
+#define PAYLOAD_TRUMA_END				PAYLOAD_TRUMA_START + (0x10)
+
+typedef struct {
+	int8_t byte_no;
+	int8_t start_bit;
+	int8_t len;
+} bits_t;
+
+typedef enum {
+	CTRL,
+	INFO,
+	MIRROR,
+	BOTH
+} frame_t;
+
+typedef enum {
+	_1_BITS,
+	_2_BITS,
+	_3_BITS,
+	_4_BITS,
+	_8_BITS,
+	_2_BITS_SIGNED,
+	_3_BITS_SIGNED,
+	_2_DIGITS_BCD,
+	_8_BITS_CHECKSUM,
+    _MSB_FIRST,
+	_LSB_FIRST
+} par_type_t;
+
+typedef enum {
+	CTRL_FRAME_ID = 2,
+	INFO_FRAME_ID = 1,
+	WATER_ON = 0,
+	RADIO_ON,
+	HEATER_ON,
+	PUMP_ON,
+	HS_ON,
+	NETWORK_ON,
+	KEY_AWNING,
+	BATTERY_ALARM,
+	AUX_OUTPUT,
+	FAIR_PROGRAM,
+	AMBIENT_TEMP,
+	INSIDE_TEMP,
+	MO_BAT_VOLTAGE,
+	CO_BAT_VOLTAGE,
+	WATER_LEVELS,
+	DPLUS,
+	PARALLEL,
+	TREAT_RETRACTED,
+	AWNING,
+	HEATER_AVAILABLE,
+	GAS,
+	AUX,
+	CHARGING_VOLTAGE,
+	BATTERY_VOLTAGE_MSB,
+	BATTERY_VOLTAGE_LSB,
+	SILENT_MODE,
+	CHARGING_CURRENT,
+	CHARGING_ACTIVE,
+	ERROR,
+	REDUCED_POWER,
+    BATTERY_CURRENT,
+    BATTERY_VOLTAGE,
+    BATTERY_TEMP,
+    CURRENT_AUTORANGE,
+    IBS_ERROR,
+    STATE_OF_CHARGE,
+    STATE_OF_HEALTH,
+    EST_VOLTA_DROP,
+    OPT_CHARGE_VOLT,
+    AVG_RI,
+    AVAILABLE_CAPACITY,
+    DISCHARGEABLE_AH,
+    NOMINAL_CAPACITY,
+    RECALIBRATED,
+	WATER_HEATER_TEMP,
+	ENERGY_SEL,
+	POWER_LIMIT,
+	FLAGS,
+	AIR_HEATER_TEMP
+} topic_t;
+
+typedef struct {
+	bits_t bits;
+	frame_t frame;
+	char parameter_name[40];
+	par_type_t type;
+	topic_t topic;
+} encode_decode_t;
+
+#endif

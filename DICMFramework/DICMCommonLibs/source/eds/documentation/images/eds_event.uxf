@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>300</x>
+      <y>260</y>
+      <w>220</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Event&gt;&gt;
+--
+- id: uint32_t
+- size: size_t
+- mem: pointer to allocator
+- ref: reference counter</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>300</x>
+      <y>180</y>
+      <w>280</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Event with no data
+bg=orange</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>300</x>
+      <y>530</y>
+      <w>220</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Event&gt;&gt;
+--
+- id: uint32_t
+- size: size_t
+- mem: pointer to allocator
+- ref: reference counter</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>300</x>
+      <y>450</y>
+      <w>280</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Event with data
+bg=orange</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>300</x>
+      <y>680</y>
+      <w>220</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;User data&gt;&gt;
+--
+-- Appended to the Event structure</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

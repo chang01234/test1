@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>12</zoom_level>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>192</x>
+      <y>0</y>
+      <w>792</w>
+      <h>984</h>
+    </coordinates>
+    <panel_attributes>symbol=component
+*&lt;&lt;Agent&gt;&gt;*
+Event Processing Agent
+--
+- Manages the event queue
+- Manages the state machine processor
+- has a priority level
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>276</x>
+      <y>600</y>
+      <w>180</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>State machine with
+states
+(user code)
+bg=yellow
+symbol=substate</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>300</x>
+      <y>264</y>
+      <w>120</w>
+      <h>132</h>
+    </coordinates>
+    <panel_attributes>customelement=
+// Text Elemnt
+// DB Symbol
+drawArc(0,0,width,height*2/5,0,180,true) fg=black //Parameters (x, y, width, height, start, extent, open)
+drawArc(0,0,width,height*2/5,180,180,true) fg=black //Parameters (x, y, width, height, start, extent, open)
+//drawRectangle(0,(height+0.5)/5,width,(height)*3/5-1) fg=white //Parameters (x, y, width, height)
+drawLine(0,height/5,0,height*4/5)fg=black //Parameters (x1, y1, x2, y2) 
+drawLine(width,height/5,width,height*4/5)fg=black //Parameters (x1, y1, x2, y2) 
+drawArc(0,height*1/5,width,height*2/5,180,180,true) fg=black //Parameters (x, y, width, height, start, extent, open)
+drawArc(0,height*2/5,width,height*2/5,180,180,true) fg=black //Parameters (x, y, width, height, start, extent, open)
+drawArc(0,height*3/5,width,height*2/5,180,180,true) fg=black //Parameters (x, y, width, height, start, extent, open)
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>264</x>
+      <y>456</y>
+      <w>204</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>Event</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>348</x>
+      <y>696</y>
+      <w>108</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+Processed</panel_attributes>
+    <additional_attributes>10.0;60.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>264</x>
+      <y>768</y>
+      <w>204</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>Event</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>348</x>
+      <y>840</y>
+      <w>276</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+Delete (if not needed any more)</panel_attributes>
+    <additional_attributes>10.0;60.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>348</x>
+      <y>528</y>
+      <w>96</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+Process</panel_attributes>
+    <additional_attributes>10.0;60.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>348</x>
+      <y>384</y>
+      <w>60</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+Get</panel_attributes>
+    <additional_attributes>10.0;60.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates>
+      <x>348</x>
+      <y>912</y>
+      <w>24</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>type=final</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>600</x>
+      <y>540</y>
+      <w>336</w>
+      <h>228</h>
+    </coordinates>
+    <panel_attributes>symbol=component
+*&lt;&lt;SMP&gt;&gt;*
+State Machine Processor
+--
+- Internal component of Agent
+- Dispatch event to state function
+- Executes the transtion (if any)
+- Calls specific state ENTRY and EXIT 
+  actions</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>444</x>
+      <y>624</y>
+      <w>180</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+Execute</panel_attributes>
+    <additional_attributes>10.0;20.0;130.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>300</x>
+      <y>156</y>
+      <w>120</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>receive
+event
+type=receiver</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>348</x>
+      <y>192</y>
+      <w>60</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+Put</panel_attributes>
+    <additional_attributes>10.0;60.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>504</x>
+      <y>264</y>
+      <w>300</w>
+      <h>132</h>
+    </coordinates>
+    <panel_attributes>Lightweight fixed size event queue
+- Contains references to events
+- Able to put event in front (LIFO)
+  and at back (FIFO) which is the
+  default
+bg=orange</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
