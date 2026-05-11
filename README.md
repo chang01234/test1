@@ -35,4 +35,6 @@ git checkout 分支名称     ：转换到分支目录
 
 git submodule update --force --init --recursive   ：更新子模块数据，@文件名-调用分支中的子模块
 
+git submodule add <URL> DICMFramework ：新建一个名称为DICMFramework的地址为<URL>的子模块
+
 
